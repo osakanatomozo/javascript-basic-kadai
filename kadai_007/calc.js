@@ -1,4 +1,4 @@
-num=20
+let num=45;
 
 if (num%3===0 && num%5===0) {
   console.log('3と5の倍数です');

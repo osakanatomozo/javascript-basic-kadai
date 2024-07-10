@@ -1,8 +1,7 @@
-const today = new Date();
-const options = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
+const today  = new Date();
 
-console.log(today.toLocaleDateString(undefined, options));
+const year = today.getUTCFullYear()+'年';
+const month = today.getUTCMonth()+1+'月';
+const date = today.getUTCDate()+'日';
+
+console.log(year+month+date);
